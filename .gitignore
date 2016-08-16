@@ -26,3 +26,5 @@ src/main/webapp/WEB-INF
 target/classes/app/snippet/SnippetDao.class
 
 target/classes/app/util/Routes$Web.class
+
+*.jar
