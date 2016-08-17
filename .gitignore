@@ -18,13 +18,4 @@ bin/
 /bin/
 src/main/webapp/WEB-INF
 *.class
-
-*.class
-
-*.class
-
-target/classes/app/snippet/SnippetDao.class
-
-target/classes/app/util/Routes$Web.class
-
 *.jar
