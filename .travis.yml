@@ -5,3 +5,13 @@ before_install:
 - mvn clean
 after_success:
 - mvn test jacoco:report coveralls:report
+deploy:
+  skip_cleanup: true
+  provider: heroku
+  api_key:
+    secure: "QBSic6yTdpw7TEbcoU2aT14npw6ix2XL/x2poR+3+2YAhOCliWUNiul3KN7qJXDJB1cXbkorcrROWnZDcc3ITrZfMwKmuJF8OSdwptJ8P50vo3NFmQ1MXET/kqCb7dsIrkgEXiJ6Kz23Hm+A9duAmTvPqyGXCrxaoosly5yEMfkIxpApF64nNQfkCzyoaOXPeDL4ZSR3a4P1+Ytnr2r1BqKgTxagQTNrx7C4lakk5oe3byrxt2pkWh7Qi7nBtmK192ipRlgih+v5goxJATIHSxgY9b88ht9DMm9rpfVEBO6z4ntDedMmkCzczrysz327yg8mYdhiLx2MWJFiAK/xFbLLFDe7u+RK/Tl7SYEakWAzYUOdS0yThiJrrvJmZRZFbkqJFJDMRvtLp0mvcX3iaIJs0rgyPB/gcc2fnwiFydut2tvHXFYArfJ5XxJb9vlPdPN8F+XFEmE2rWMnH5+2aj1MsXj9GqhDj9vl6RUkutjjOzD5gtLur3GOA2+d6Wh2x2Upu9yGnhVqnqJSzP1sL1fbK/Vx24oLuQh5chIxyvRFJ26wLErqCsQRYdndzkH8FHl9PZ9iAsv+IIW2boomlyngGzb7nxXI/fzTEcG+3hLSy9f7Whpn5sIVQ+voR7YzmNbYjeC2khu/NF/yTcg5+H6mh1wR+X6FB/9WRjg3vgw="
+  app:
+    acceptance: snippets-app-acceptance
+    master: snippets-app-production
+  on:
+    repo: gijswijnholds/snippets-app  
