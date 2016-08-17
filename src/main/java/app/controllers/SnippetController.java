@@ -36,8 +36,6 @@ public class SnippetController {
         model.put("chapter", chapter);
         model.put("name", name);
         model.put("code", snippet.getCode());
-        //    SnippetReference ref = new SnippetReference();
-        //  snippetUrlDao.getSnippet(snippetRef);
         return ViewUtil.render(model, Path.Template.ONE_SNIPPET);
     }
 
