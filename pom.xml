@@ -4,7 +4,10 @@
   <artifactId>snippets-app</artifactId>
   <version>1.0</version>
   <name>snippets-app</name>
-<dependencies>
+  <properties>
+    	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+  <dependencies>
   	<dependency>
   		<groupId>com.sparkjava</groupId>
   		<artifactId>spark-core</artifactId>
@@ -100,6 +103,13 @@
         		</execution>
     		</executions>
 		</plugin>
+		<plugin>
+    <groupId>org.eluder.coveralls</groupId>
+    <artifactId>coveralls-maven-plugin</artifactId>
+    <version>4.2.0</version>
+    <configuration>
+    </configuration>
+</plugin>
     </plugins>
 </build>
 </project>
