@@ -22,7 +22,7 @@ import spark.Response;
 
 public class SnippetController {
 
-    public static String serveOneSnippetPage(Request request, Response response) {
+    public static String serveOneSnippetPage(Request request) {
 
         Map<String, Object> model = new HashMap<>();
         String language = request.params(":language");

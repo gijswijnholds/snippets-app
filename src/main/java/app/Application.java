@@ -38,7 +38,7 @@ public class Application {
         });
 
         get("/snippets/:language/:chapter/:name", (request, response) -> {
-            return SnippetController.serveOneSnippetPage(request, response);
+            return SnippetController.serveOneSnippetPage(request);
         });
 
         //    get("*", ViewUtil.notFound);
