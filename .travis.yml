@@ -3,5 +3,5 @@ jdk:
 - oraclejdk8
 before_install:
 - mvn clean
-after_succes:
+after_success:
 - mvn test jacoco:report coveralls:report
