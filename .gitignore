@@ -16,4 +16,10 @@ target/
 build/
 bin/
 /bin/
+<<<<<<< HEAD
 src/main/webapp/WEB-INF
+=======
+src/main/webapp/WEB-INF
+*.class
+*.jar
+>>>>>>> acceptance
